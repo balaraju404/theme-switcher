@@ -6,5 +6,7 @@
  .main-content {
   width: 90vw;
   height: 82vh;
+  max-height: 82vh;
+  overflow-y: scroll;
  }
 }

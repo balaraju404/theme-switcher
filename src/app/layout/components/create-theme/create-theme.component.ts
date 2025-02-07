@@ -26,16 +26,16 @@ export class CreateThemeComponent {
   this.tf_mdl_1 = new TextfieldModel(2, "Color");
   this.tf_mdl_1.isDisabled = true
 
-  this.tf_mdl_2 = new TextfieldModel(3, "Color");
+  this.tf_mdl_2 = new TextfieldModel(3, "Color light");
   this.tf_mdl_2.isDisabled = true
 
-  this.tf_mdl_3 = new TextfieldModel(4, "Color");
+  this.tf_mdl_3 = new TextfieldModel(4, "Color Dark");
   this.tf_mdl_3.isDisabled = true
 
-  this.tf_mdl_4 = new TextfieldModel(5, "Color");
+  this.tf_mdl_4 = new TextfieldModel(5, "Color Light 2");
   this.tf_mdl_4.isDisabled = true
 
-  this.tf_mdl_5 = new TextfieldModel(6, "Color");
+  this.tf_mdl_5 = new TextfieldModel(6, "Color Dark 2");
   this.tf_mdl_5.isDisabled = true
  }
  eventHandler(event: any) {
