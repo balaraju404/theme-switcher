@@ -1,0 +1,15 @@
+@use "../variables//colors.scss" as *;
+
+.layout {
+ .header {
+  width: 93vw;
+  height: 10vh;
+  background: linear-gradient(190deg, var(--clr), var(--clr), var(--clr), var(--clr-light));
+
+  .title {
+   font-size: 1.25rem;
+   color: $clr-white;
+   text-align: center;
+  }
+ }
+}

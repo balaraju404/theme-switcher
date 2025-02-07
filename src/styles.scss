@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+.layout {
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+}
+
+.layout .main-content {
+ width: 90vw;
+ height: 82vh;
+}
+
+.layout .menu {
+ width: 7vw;
+ height: 100vh;
+ background: var(--clr-light);
+}
+
+.layout .menu .logo-item {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+
+.layout .menu .logo {
+ width: 4em;
+ height: 4rem;
+ background: #ffffff;
+ border-radius: 1rem;
+ box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.25);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.layout .menu .logo .logo-text {
+ font-size: 1.5rem;
+}
+
+.layout .header {
+ width: 93vw;
+ height: 10vh;
+ background: linear-gradient(190deg, var(--clr), var(--clr), var(--clr), var(--clr-light));
+}
+
+.layout .header .title {
+ font-size: 1.25rem;
+ color: #ffffff;
+ text-align: center;
+}
+
+.layout .footer {
+ width: 93vw;
+ height: 8vh;
+ background: linear-gradient(190deg, var(--clr), var(--clr-light));
+}
+
+.bg-red {
+ background: #ff0000;
+}
+
+.bg-blue {
+ background: #0000ff;
+}
+
+.bg-green {
+ background: #00ff00;
+}
+
+:root {
+ --clr: #663399;
+ --clr-light: #dfd2f2;
+ --clr-dark: #4b1f66;
+ --clr-light-2: #8e6bdb;
+ --clr-dark-2: #320d4e;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+}

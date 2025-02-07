@@ -1,0 +1,20 @@
+@use "layout";
+@use "menu";
+@use "header";
+@use "footer";
+
+
+@use "../variables/colors.scss" as *;
+
+
+.bg-red {
+ background: $clr-red;
+}
+
+.bg-blue {
+ background: $clr-blue;
+}
+
+.bg-green {
+ background: $clr-green;
+}

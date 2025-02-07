@@ -1,0 +1,16 @@
+@use "variables" as *;
+@use "helper";
+@use "layout";
+
+:root {
+ --clr: #663399;
+ --clr-light: #dfd2f2;
+ --clr-dark: #4b1f66;
+ --clr-light-2: #8e6bdb;
+ --clr-dark-2: #320d4e;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+}

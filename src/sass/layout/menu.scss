@@ -1,0 +1,31 @@
+@use "../variables/colors.scss" as *;
+@use "../variables/border.scss" as *;
+
+.layout {
+ .menu {
+  width: 7vw;
+  height: 100vh;
+  background: var(--clr-light);
+
+  .logo-item {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+  }
+
+  .logo {
+   width: 4em;
+   height: 4rem;
+   background: $bg-white;
+   border-radius: $bdr-radius-xl;
+   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.25);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .logo-text {
+    font-size: 1.5rem;
+   }
+  }
+ }
+}

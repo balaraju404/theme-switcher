@@ -1,0 +1,19 @@
+<div class="theme-container">
+ <div class="theme-show-div">
+  <p class="theme-toggle-text" (click)="showThemes = !showThemes">theme</p>
+  <div class="theme-circle" [ngStyle]="{'background': selectedTheme['color']}" (click)="showThemes = !showThemes"></div>
+ </div>
+
+ <div *ngIf="showThemes" class="theme-changer-section">
+  <div class="theme-changer-header">
+   <p>Theme Changer</p>
+   <i class="close-icon fa-regular fa-circle-xmark" (click)="showThemes = false"></i>
+  </div>
+
+  <div class="theme-list">
+   <div *ngFor="let theme of allThemesList" class="theme-option-circle" [ngStyle]="{'background': theme.color}"
+    (click)="changeTheme(theme)" [class.selected]="theme.name === selectedTheme.name">
+   </div>
+  </div>
+ </div>
+</div>
