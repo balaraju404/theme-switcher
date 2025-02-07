@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ColorPickerComponent, ColorPickerModel, TextFieldComponent, TextfieldModel } from '@balaraju/custom-components';
+import { ColorPickerComponent, ColorPickerModel, TextFieldComponent, TextfieldModel } from '@balaraju404/custom-components';
 import { LSManager } from '../../../utils/db-manager.service';
 import { Constants } from '../../../utils/constants.service';
 import { UtilService } from '../../../utils/util.service';
