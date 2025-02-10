@@ -72,7 +72,7 @@ export class ThemeSwitcherComponent {
   })
   const userThemes = LSManager.getData(Constants.LS_USER_THEMES) || [];
   this.allThemesList = [...this.themesList, ...userThemes];
-  this.selectedTheme = LSManager.getData(Constants.LS_SELECTED_THEME)
+  this.selectedTheme = LSManager.getData(Constants.LS_SELECTED_THEME) || this.themesList[0];
   UtilService.updateTheme(this.selectedTheme)
  }
  changeTheme(theme: any) {

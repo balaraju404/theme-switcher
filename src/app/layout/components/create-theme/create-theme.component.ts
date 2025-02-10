@@ -67,7 +67,16 @@ export class CreateThemeComponent {
   }
   userThemes.push(newTheme)
   LSManager.addData(Constants.LS_USER_THEMES, userThemes)
+  alert("New Theme Added")
   UtilService.newThemeAddedSubject.next(true)
+  this.clearForm()
+ }
+ clearForm() {
+  this.tf_mdl_1.selectedValue = ""
+  this.tf_mdl_2.selectedValue = ""
+  this.tf_mdl_3.selectedValue = ""
+  this.tf_mdl_4.selectedValue = ""
+  this.tf_mdl_5.selectedValue = ""
  }
  lighten(hex: string, percent: number) {
   let r = parseInt(hex.slice(1, 3), 16);

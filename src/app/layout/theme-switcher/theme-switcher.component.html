@@ -1,7 +1,7 @@
 <div class="theme-container">
  <div class="theme-show-div">
   <p class="theme-toggle-text" (click)="showThemes = true">theme</p>
-  <div class="theme-circle" [ngStyle]="{'background': selectedTheme['color']}" (click)="showThemes = !showThemes"></div>
+  <div class="theme-circle" [ngStyle]="{'background': selectedTheme['color']}" (click)="showThemes = true"></div>
  </div>
 
  @if(showThemes){
@@ -12,9 +12,11 @@
   </div>
 
   <div class="theme-list">
-   <div *ngFor="let theme of allThemesList" class="theme-option-circle" [ngStyle]="{'background': theme.color}"
-    (click)="changeTheme(theme)" [class.selected]="theme.name === selectedTheme.name">
+   @for (theme of allThemesList; track $index) {
+   <div class="theme-option-circle" [ngStyle]="{'background': theme.color}" (click)="changeTheme(theme)"
+    [class.selected]="theme.name === selectedTheme.name">
    </div>
+   }
   </div>
  </div>
  }
