@@ -58,7 +58,7 @@ export class CreateThemeComponent {
  addToLs() {
   const userThemes = LSManager.getData(Constants.LS_USER_THEMES) || []
   const newTheme = {
-   "name": "custom_" + userThemes.length + 1,
+   "name": "custom_" + (userThemes.length + 1),
    "color": this.tf_mdl_1.selectedValue,
    "clr-light": this.tf_mdl_2.selectedValue,
    "clr-dark": this.tf_mdl_3.selectedValue,

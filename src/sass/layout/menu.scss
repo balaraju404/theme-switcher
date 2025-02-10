@@ -3,7 +3,7 @@
 
 .layout {
  .menu {
-  width: 7vw;
+  width: 5vw;
   height: 100vh;
   background: var(--clr-light);
 
@@ -14,8 +14,8 @@
   }
 
   .logo {
-   width: 4em;
-   height: 4rem;
+   width: 2.5rem;
+   height: 2.5rem;
    background: $bg-white;
    border-radius: $bdr-radius-xl;
    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.25);

@@ -4,14 +4,14 @@
   display: flex;
 }
 .layout .main-content {
-  width: 90vw;
+  width: 95vw;
   height: 82vh;
   max-height: 82vh;
   overflow-y: scroll;
 }
 
 .layout .menu {
-  width: 7vw;
+  width: 5vw;
   height: 100vh;
   background: var(--clr-light);
 }
@@ -21,8 +21,8 @@
   justify-content: center;
 }
 .layout .menu .logo {
-  width: 4em;
-  height: 4rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background: #ffffff;
   border-radius: 1rem;
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.25);
@@ -35,7 +35,7 @@
 }
 
 .layout .header {
-  width: 93vw;
+  width: 95vw;
   height: 10vh;
   background: linear-gradient(190deg, var(--clr), var(--clr), var(--clr), var(--clr-light));
 }
@@ -46,7 +46,7 @@
 }
 
 .layout .footer {
-  width: 93vw;
+  width: 95vw;
   height: 8vh;
   background: linear-gradient(190deg, var(--clr), var(--clr-light));
 }
@@ -63,13 +63,16 @@
   background: #00ff00;
 }
 
+.card {
+  padding: 1rem;
+}
 .card .card-header {
-  background: var(--clr-light);
+  background: var(--clr);
   padding: 1rem;
   border-radius: 10px 10px 0 0;
 }
 .card .card-header h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
   color: white;
 }
