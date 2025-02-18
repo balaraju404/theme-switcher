@@ -1,15 +1,10 @@
-<div class="card">
- <div class="card-header">
-  <h2 class="card-title">Create Theme</h2>
- </div>
- <div class="card-body">
-  <lib-color-picker [clr_picker_mdl]="cp_mdl_clr" (eventHandler)="eventHandler($event)"></lib-color-picker>
-  <lib-text-field [tf_mdl]="tf_mdl_1" (eventHandler)="eventHandler($event)"></lib-text-field>
-  <lib-text-field [tf_mdl]="tf_mdl_2" (eventHandler)="eventHandler($event)"></lib-text-field>
-  <lib-text-field [tf_mdl]="tf_mdl_3" (eventHandler)="eventHandler($event)"></lib-text-field>
-  <lib-text-field [tf_mdl]="tf_mdl_4" (eventHandler)="eventHandler($event)"></lib-text-field>
-  <lib-text-field [tf_mdl]="tf_mdl_5" (eventHandler)="eventHandler($event)"></lib-text-field>
+<lib-card [card_mdl]="card_mdl">
+ <lib-color-picker [clr_picker_mdl]="cp_mdl_clr" (eventHandler)="eventHandler($event)"></lib-color-picker>
+ <lib-text-field [tf_mdl]="tf_mdl_1" (eventHandler)="eventHandler($event)"></lib-text-field>
+ <lib-text-field [tf_mdl]="tf_mdl_2" (eventHandler)="eventHandler($event)"></lib-text-field>
+ <lib-text-field [tf_mdl]="tf_mdl_3" (eventHandler)="eventHandler($event)"></lib-text-field>
+ <lib-text-field [tf_mdl]="tf_mdl_4" (eventHandler)="eventHandler($event)"></lib-text-field>
+ <lib-text-field [tf_mdl]="tf_mdl_5" (eventHandler)="eventHandler($event)"></lib-text-field>
 
-  <button (click)="addToLs()">Add to LS</button>
- </div>
-</div>
+ <button (click)="addToLs()">Add to LS</button>
+</lib-card>

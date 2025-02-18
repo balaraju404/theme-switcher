@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
-import { ColorPickerComponent, ColorPickerModel, TextFieldComponent, TextfieldModel } from '@balaraju404/custom-components';
+import { ColorPickerComponent, ColorPickerModel, TextFieldComponent, TextfieldModel, CardModal, CardComponent, BgColor } from '@balaraju404/custom-components';
 import { LSManager } from '../../../utils/db-manager.service';
 import { Constants } from '../../../utils/constants.service';
 import { UtilService } from '../../../utils/util.service';
 
 @Component({
  selector: 'app-create-theme',
- imports: [ColorPickerComponent, TextFieldComponent],
+ imports: [ColorPickerComponent, TextFieldComponent, CardComponent],
  templateUrl: './create-theme.component.html',
- styleUrl: './create-theme.component.scss'
+ styleUrl: './create-theme.component.scss',
 })
 export class CreateThemeComponent {
+ card_mdl!: CardModal
  cp_mdl_clr!: ColorPickerModel
  tf_mdl_1!: TextfieldModel
  tf_mdl_2!: TextfieldModel
@@ -21,6 +22,8 @@ export class CreateThemeComponent {
   this.setupFields()
  }
  setupFields() {
+  this.card_mdl = new CardModal("Create Theme", BgColor.Primary, true)
+
   this.cp_mdl_clr = new ColorPickerModel(1, "Color");
 
   this.tf_mdl_1 = new TextfieldModel(2, "Color");
@@ -39,7 +42,6 @@ export class CreateThemeComponent {
   this.tf_mdl_5.isDisabled = true
  }
  eventHandler(event: any) {
-  console.log(event);
   const tag = event["tag"] || 0
   switch (tag) {
    case 1: {
