@@ -4,7 +4,7 @@
   display: flex;
 }
 .layout .main-content {
-  width: 95vw;
+  width: 100vw;
   height: 82vh;
   max-height: 82vh;
   overflow-y: scroll;
@@ -35,7 +35,7 @@
 }
 
 .layout .header {
-  width: 95vw;
+  width: 100vw;
   height: 10vh;
   background: linear-gradient(190deg, var(--clr), var(--clr), var(--clr), var(--clr-light));
 }
@@ -46,7 +46,7 @@
 }
 
 .layout .footer {
-  width: 95vw;
+  width: 100vw;
   height: 8vh;
   background: linear-gradient(190deg, var(--clr), var(--clr-light));
 }

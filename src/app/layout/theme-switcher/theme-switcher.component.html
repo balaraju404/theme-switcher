@@ -1,7 +1,6 @@
 <div class="theme-container">
  <div class="theme-show-div">
-  <p class="theme-toggle-text" (click)="showThemes = true">theme</p>
-  <div class="theme-circle" [ngStyle]="{'background': selectedTheme['color']}" (click)="showThemes = true"></div>
+  <i class="fa-solid fa-gear" [ngStyle]="{'color': selectedTheme.color}" (click)="showThemes = true"></i>
  </div>
 
  @if(showThemes){

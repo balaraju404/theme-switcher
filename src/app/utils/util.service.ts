@@ -16,4 +16,10 @@ export class UtilService {
   document.documentElement.style.setProperty('--clr-dark-2', clr_dark_2);
   UtilService.themeChangeSubject.next(theme["name"] || "default");
  }
+ static getDMY(dt: Date = new Date()) {
+  const date = dt.getDate().toString().padStart(2, "0")
+  const month = (dt.getMonth() + 1).toString().padStart(2, "0")
+  const year = dt.getFullYear()
+  return `${date}/${month}/${year}`
+ }
 }

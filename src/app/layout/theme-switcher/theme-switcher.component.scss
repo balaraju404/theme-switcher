@@ -3,6 +3,12 @@
  position: relative;
  font-family: 'Arial', sans-serif;
 
+ .fa-gear {
+  background: gray;
+  padding: 0.25rem;
+  border-radius: 0.4rem;
+ }
+
  .theme-show-div {
   display: flex;
   flex-direction: column;
