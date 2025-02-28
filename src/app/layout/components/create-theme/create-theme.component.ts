@@ -22,7 +22,7 @@ export class CreateThemeComponent {
   this.setupFields()
  }
  setupFields() {
-  this.card_mdl = new CardModal("Create Theme", BgColor.Primary, true)
+  this.card_mdl = new CardModal("Create Theme", BgColor.Default, true)
 
   this.cp_mdl_clr = new ColorPickerModel(1, "Color");
 

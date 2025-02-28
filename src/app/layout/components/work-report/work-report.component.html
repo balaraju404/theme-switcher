@@ -1,0 +1,16 @@
+<lib-card [card_mdl]="card_mdl">
+ <div class="row">
+  <lib-text-field [tf_mdl]="tf_mdl_emp_name" (eventHandler)="eventHandler($event)"></lib-text-field>
+  <lib-text-field [tf_mdl]="tf_mdl_company_name" (eventHandler)="eventHandler($event)"></lib-text-field>
+  <lib-date [date_mdl]="dt_mdl_date" (eventHandler)="eventHandler($event)"></lib-date>
+ </div>
+ <div class="row">
+  <lib-text-field [tf_mdl]="tf_mdl_work_title" (eventHandler)="eventHandler($event)"></lib-text-field>
+  <lib-text-field [tf_mdl]="tf_mdl_work_status" (eventHandler)="eventHandler($event)"></lib-text-field>
+  <lib-text-area [ta_mdl]="ta_mdl_comments" (eventHandler)="eventHandler($event)"></lib-text-area>
+ </div>
+ <div class="row">
+  <lib-button [btn_mdl]="btn_mdl_save" (eventHandler)="eventHandler($event)"></lib-button>
+  <lib-button [btn_mdl]="btn_mdl_generate_excel" (eventHandler)="eventHandler($event)"></lib-button>
+ </div>
+</lib-card>
